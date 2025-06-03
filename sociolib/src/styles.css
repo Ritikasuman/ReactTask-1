@@ -1,3 +1,10 @@
+
+
+#root{
+  height:100%;
+  width:100%;
+}
+
 header {
   display: flex; 
   justify-content: space-between;
@@ -8,12 +15,11 @@ header {
   align-items: center; 
 }
 
+
 .elogo-img {
-  height: 18px; /* adjust as needed */
-  width: 152px;  /* keeps aspect ratio */
+  height: 18px; 
+  width: 152px;  
 }
-
-
 
 
 
@@ -26,23 +32,82 @@ header {
 .home-section {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
+   background: rgba(0, 0, 0, 0.5);
 }
 
 
-.first-section {
-  position: relative;
+.vedio-section {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  z-index: -1;
-  pointer-events: none; /* so clicks go through iframe */
+  height: 100%; /* Full screen height */
+  z-index:-1;
+  pointer-events: none;
+   background: rgba(0, 0, 0, 0.3);
+  /* overflow: hidden; */
 }
 
-.first-background iframe {
+.vedio-section iframe {
   width: 100%;
   height: 100%;
+  border: none;
+}
+
+iframe {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+
+#transform{
+font-family: sans-serif;
+
+}
+
+
+
+
+
+
+
+.parentdiv {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  width: 60%;
+  height: 60%;
+ 
+  margin-right:20px; 
+  margin-left: 100px;
+}
+
+.leftdiv {
+  width: 30%;
+  padding: 10px;
+  background: transparent;
+  color: white;
+}
+
+.rightdiv {
+  width: 35%;
+  padding: 10px;
+  background: transparent;
+}
+
+#Heroimage {
+  width: 35%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-img {
+  width: 50%;
+  height: auto;
   object-fit: cover;
+  display: block;
 }

@@ -3,10 +3,8 @@ import Home from './components/home';
 import './styles.css';
 function  Webpage(){
     return(
-     <div >
-        <Header/>
+     <div className="webpage-container">
         <Home/>
-      
     </div>
     )
 }
