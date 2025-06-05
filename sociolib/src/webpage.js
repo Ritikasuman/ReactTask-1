@@ -1,10 +1,18 @@
+import Aboutus from './components/AboutUsSection';
 import Header from './components/header';
-import Home from './components/home';
+import SectionOne from './components/SectionOne';
+import Sponsor from './components/SponsorSection';
+
 import './styles.css';
 function  Webpage(){
     return(
      <div className="webpage-container">
-        <Home/>
+       <Header/>
+        <div className='initial'>
+            <SectionOne/>
+            <Sponsor/>
+            <Aboutus/>
+        </div>
     </div>
     )
 }

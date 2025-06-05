@@ -1,24 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 
-#root{
+.webpage-container{
+  width:100%;
   height:100%;
-  width:100%;
-}
-
-header {
-  display: flex; 
-  justify-content: space-between;
-  padding:10px 10px;
-  height:54px;
-  width:100%;
-  background-color: #262626;
-  align-items: center; 
 }
 
 
-.elogo-img {
-  height: 18px; 
-  width: 152px;  
+.navbar {
+  height:9%;
+  width: 100%;  
+  display: flex;
+  gap :25%;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.0);
+  color: white;
+  padding: 20px 80px;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgb(171, 176, 190,0.2);
+
+}
+
+.logo {
+  margin-left: 10%;
+  height: 25px; 
+  width: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #FFA32E; 
+}
+
+
+/*dropdown*/
+
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 60%;
+  background: rgb(255, 255, 255);
+  padding: 10px 10;
+  min-width: 160px;
+  z-index: 999;
+  color: black;
+  border-radius:10%;
+}
+
+.dropdown-menu li {
+  padding: 20px 20px;
+  white-space: nowrap;
+}
+
+.dropdown-menu li a {
+  color: black;
+  font-size: 1rem;
+  display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  color: #FFA32E;
+
 }
 
 
@@ -27,87 +92,161 @@ header {
 
 
 
+/*section one*/
 
-/*home css */
+
 .home-section {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
-   background: rgba(0, 0, 0, 0.5);
-}
-
-
-.vedio-section {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; /* Full screen height */
-  z-index:-1;
-  pointer-events: none;
-   background: rgba(0, 0, 0, 0.3);
-  /* overflow: hidden; */
-}
-
-.vedio-section iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-iframe {
-  width: 100%;
-  max-width: 100%;
-}
-
-
-
-#transform{
-font-family: sans-serif;
-
-}
-
-
-
-
-
-
-
-.parentdiv {
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  width: 60%;
-  height: 60%;
- 
-  margin-right:20px; 
-  margin-left: 100px;
-}
-
-.leftdiv {
-  width: 30%;
-  padding: 10px;
-  background: transparent;
+  align-items: center;
+  justify-content: center;
   color: white;
 }
 
-.rightdiv {
-  width: 35%;
-  padding: 10px;
-  background: transparent;
+
+/*vedio*/
+.video-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  pointer-events: none;
 }
 
-#Heroimage {
-  width: 35%;
-  height: auto;
-  overflow: hidden;
+.video-section iframe {
+  height: 100%;
+  width: 100%;
+  border: none;
+  object-fit: cover;
+}
+
+
+
+/*content*/
+.content-container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  z-index: 1;
+}
+
+.left-section {
+  width: 55%;
+    margin-left: 20px 0px;
+}
+
+.Main-heading {
+  font-family: sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  position:relative;
+  top: -40px;
+  line-height: 1.2;
+}
+
+.Main-subtext {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #ABB0BE;
   position: relative;
+  top:-20px;
+}
+
+
+
+/*buttons*/
+.SectionOne-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.button {
+  border: none;
+  font-size: 16px;
+  border-radius: 999px;
+  padding: 12px 24px;
+  cursor: pointer;
+ background: rgba(0, 0, 0, 0.6);
+}
+
+.button.primary {
+  background-color: #186FFF;
+  color: #FFFFFF;
+   width: 233px;       
+   height: 60px;        
+   padding: 12px 32px; 
+   font-size: 18px;
+   font:bold; 
+   
+}
+
+.button.secondary {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+   width: 233px;       
+   height: 60px;        
+   padding: 20px 50px; 
+}
+
+
+/*largeimg*/
+.right-section {
+  width: 43%;
+
 }
 
 .hero-img {
-  width: 50%;
+  position:relative;
+  top:20;
+  width: 100%;
+
+}
+
+
+
+
+
+/*SponsorsImg*/
+.SponsorMain {
+  display: flex;
+  width:100%;
+  gap: 5%;
+  justify-content: center;
+  padding:  20px 20px;
+  background: black;
+  position: relative;
+  top:-160px; 
+ 
+}
+
+.SponsorSub{
+  width:90%;
+    justify-content: center;
+     margin-left:6%;
+}
+
+.Slogo {
+  width: 15%;
   height: auto;
-  object-fit: cover;
-  display: block;
+  background: black;
+  overflow:hidden;
+
+}
+
+
+
+
+/* About us section */
+
+
+.AboutText{
+  color : black ;
 }
