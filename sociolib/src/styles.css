@@ -246,7 +246,45 @@
 
 /* About us section */
 
+.MainAboutUs{
+ background: black;
+  width:100%;
+  height:100vh;
+  text-align: left;
+}
 
 .AboutText{
-  color : black ;
+    color : #ABB0BE; ;
+    background-color: black;
+    margin-left:11%;
+    margin-right:78%;
+    font-size: 9px;
+    border: 1px solid white;
+    border-radius: 10%;
+    padding: 4px 18px 4px 18px;     
+    border-radius: 999px;    
+    display: inline-block; 
 }
+
+
+.MainText{
+  color: white;
+  font-size: 56px;
+  font-family: sans-serif ;
+   font-weight: bold;
+    margin-top:10px ;
+    margin-left:11%;
+    margin-right:6%;
+    line-height: 67px;
+}
+
+.JoinDiv{
+
+}
+.LeftDiv{
+
+}
+.RightDiv{
+
+}
+
