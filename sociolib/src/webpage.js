@@ -1,7 +1,7 @@
 import Aboutus from './components/AboutUsSection';
 import Header from './components/header';
 import SectionOne from './components/SectionOne';
-import Sponsor from './components/SponsorSection';
+import ServicesSection from './components/ServicesSection';
 
 import './styles.css';
 function  Webpage(){
@@ -11,6 +11,7 @@ function  Webpage(){
         <div className='initial'>
             <SectionOne/>
             <Aboutus/>
+            <ServicesSection/>
         </div>
     </div>
     )

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 
@@ -278,6 +279,7 @@ li{
 /* About us section */
 
 .MainAboutUs{
+  padding-top:7%; 
  background: black;
   width:100%;
   height:80vh;
@@ -296,6 +298,7 @@ li{
     border-radius: 999px;    
     display: inline-block; 
     font-family: sans-serif;
+    
 }
 
 
@@ -309,6 +312,7 @@ li{
     margin-right:6%;
     margin-bottom:4%;
     line-height: 67px;
+    letter-spacing: -2px;
 }
 
 .JoinDiv{
@@ -344,3 +348,65 @@ padding-top: 68px;
  
 }
 
+   /* service section  */
+
+
+
+
+   .services-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0b0c10;
+  color: #ffffff;
+  padding: 60px 80px;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.services-left {
+  flex: 1;
+  text-align: center;
+}
+
+.services-img {
+  width: 90%;
+  max-width: 400px;
+}
+
+.services-right {
+  flex: 1;
+  max-width: 600px;
+}
+
+.tag-button {
+  background-color: #1c1e24;
+  color: #f3c623;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.description {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.service-item {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+.service-item span {
+  font-size: 24px;
+  color: #fff;
+}
