@@ -9,7 +9,7 @@ import hyper from '../assets/HyperSponsorLogo.webp';
 function SectionOne() {
   return (
     <div className='Main'>
-    <div className="home-section">
+     <div className="home-section">
       {/* Background video */}
       <div className="video-section">
         <iframe
@@ -21,7 +21,7 @@ function SectionOne() {
       </div>
 
       {/* Content*/}
-      <div className="content-container">
+      <span className="content-container">
         <div className="left-section">
           <h1 className="Main-heading">Transform your<br />vision into digital<br />excellence</h1>
           <p className="Main-subtext">
@@ -32,7 +32,7 @@ function SectionOne() {
 
           <div className="SectionOne-buttons">
             <button className="button primary">View Portfolio</button>
-            <button className="button secondary">Watch Reels</button>
+            <button className="button secondary">&#9654; Watch Reels</button>
           </div>
         </div>
 
@@ -40,10 +40,8 @@ function SectionOne() {
           <img src={logo} alt="hero" className="hero-img" />
         </div>
 
-      </div>  
-      
-    </div>
-          <div className='SponsorMain'>
+      </span> 
+      <div className='SponsorMain'>
                <div className='SponsorSub'>
                   <img src={mega} alt="logo" className="Slogo" />
                   <img src={power} alt="logo" className="Slogo" />
@@ -52,7 +50,10 @@ function SectionOne() {
                   <img src={ultrap} alt="logo" className="Slogo" />
                   <img src={mega} alt="logo" className="Slogo" />
                      </div>
-             </div>
+      </div> 
+      
+    </div>
+          
 
 </div>
    

@@ -11,6 +11,7 @@
 }
 
 
+
 .navbar {
   height:9%;
   width: 100%;  
@@ -28,7 +29,7 @@
 }
 
 .logo {
-  margin-left: 10%;
+  margin-left: 6%;
   height: 25px; 
   width: auto;
 }
@@ -50,6 +51,14 @@
   color: #FFA32E; 
 }
 
+button{
+   font-weight: bold;
+}
+
+li{
+   font-weight: bold;
+   font-family: sans-serif;
+}
 
 /*dropdown*/
 
@@ -95,17 +104,16 @@
 /*section one*/
 
 .Main{
-  height:100vh;
+  height:105vh;
   width:100%;
 }
 
 .home-section {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 105vh;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.6);
-  display: flex;
   align-items: center;
   justify-content: center;
   color: white;
@@ -136,26 +144,38 @@
 .content-container {
   display: flex;
   align-items: center;
-  width: 80%;
+  justify-content: space-between;  
+  width: 95%;
+  padding-right:0% ;
+  padding-left:11% ;
+  padding-top:5% ;               
+  height:90vh;                   
   z-index: 1;
 }
 
+
 .left-section {
-  width: 55%;
-    margin-left: 20px 0px;
+  width: 48%;
+  height:100%;
+  
 }
+
 
 .Main-heading {
   font-family: sans-serif;
   font-size: 70px;
   font-weight: bold;
-  position:relative;
-  top: -40px;
   line-height: 1.2;
+  margin-top: 18%;
+  margin-bottom: 35px  ;
+  letter-spacing:-0.03em;
+  top :0px;
 }
 
+
 .Main-subtext {
-  font-size: 1rem;
+  font-size:  20px ;
+  font-family: sans-serif;
   line-height: 1.5;
   margin-bottom: 20px;
   color: #ABB0BE;
@@ -168,12 +188,13 @@
 /*buttons*/
 .SectionOne-buttons {
   display: flex;
-  gap: 15px;
+  gap: 20px;
+  margin-top: 20px;  /* added */
 }
+
 
 .button {
   border: none;
-  font-size: 16px;
   border-radius: 999px;
   padding: 12px 24px;
   cursor: pointer;
@@ -197,33 +218,44 @@
   border: 1px solid white;
    width: 233px;       
    height: 60px;        
-   padding: 20px 50px; 
+   padding: 10px 30px; 
+    font-size: 18px;
+
 }
 
 
 /*largeimg*/
 .right-section {
-  width: 35%;
-
+  width: 52%;
+  height:100%;
+  display: flex;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+  margin-right:0;
+  left:-10;
 }
 
 .hero-img {
-  position:relative;
-  top:20;
-  width: 100%;
-
+  padding-top: 15%;
+  width: 86%;
+  height:100%;
+  object-fit: contain;
+    filter: drop-shadow(0 0 60px #186FFF);
 }
+
 
 
 
 
 .SponsorMain {
-  height: 20vh;
+  height: 30vh;
   background: black;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom:10px;
   position: relative;
-  
+  z-index: 0;
+  top : -4%;
   
 }
 
