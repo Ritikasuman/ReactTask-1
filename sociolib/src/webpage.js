@@ -10,7 +10,6 @@ function  Webpage(){
        <Header/>
         <div className='initial'>
             <SectionOne/>
-            <Sponsor/>
             <Aboutus/>
         </div>
     </div>
