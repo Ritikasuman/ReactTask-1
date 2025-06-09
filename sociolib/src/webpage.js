@@ -6,8 +6,8 @@ import Contact from './components/contact';
 import ValueSection from './components/ValueSection';
 import Footer from './components/footer';
 import ReviewSection from './components/ReviewSection';
+import MSSection from './components/MSSection';
 
-import './styles.css';
 function  Webpage(){
     return(
      <div className="webpage-container">
@@ -16,6 +16,7 @@ function  Webpage(){
             <SectionOne/>
             <Aboutus/>
             <ServicesSection/>
+            <MSSection/>
             <ReviewSection/>
             <ValueSection/>
             <Contact/>
@@ -25,4 +26,4 @@ function  Webpage(){
     )
 }
 
-export default Webpage
+export default Webpage;

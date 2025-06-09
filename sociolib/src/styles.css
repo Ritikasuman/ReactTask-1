@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  
 }
 
 
@@ -276,6 +277,8 @@ li{
   size: 12px;
 }
 
+
+
 /* About us section */
 
 .MainAboutUs{
@@ -417,11 +420,13 @@ padding-top: 68px;
 
 
 /* value Section */
+
+
 .value-section {
   background-color: #0a0a0a;
   color: white;
   padding: 60px 20px;
-  height: 83vh;
+  height: 80vh;
   width: 100% ;
 }
 
@@ -528,6 +533,119 @@ padding-top: 68px;
 
 
 
+
+
+
+
+/* MSERVICES SECTION */
+.MService {
+  background-color: #000000;
+  color: white;
+  position: relative;
+  height:100vh;
+  font-family: sans-serif;
+ 
+  width:100%;
+}
+
+
+.heading {
+  margin-bottom: 30px;
+  letter-spacing:-0.01em;
+  line-height: 30px;
+}
+
+.heading h2 {
+  font-size: 48px;
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+.viewAll {
+  position: absolute;
+  top: 120px;
+  right: 120px;
+  display: inline-block;
+}
+
+.viewAll a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+
+.Flags {
+  display: flex;
+  gap: 35px;
+  margin-top: 40px;
+  height:70%; 
+
+}
+
+.ImgFlag {
+  background-color: #161618;
+  border-radius: 12px;
+  width: 25%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.subcontent {
+  flex-grow: 1;
+}
+
+.topicname h3 {
+  font-size: 24px;
+  font-weight: 600;
+
+}
+
+.context p {
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.5;
+
+}
+
+.Learnmore {
+  margin-top: 20px;
+}
+
+.Learnmore a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+
+
+
 /* ContactUs */
 .contact-section {
   position: relative;
@@ -568,7 +686,7 @@ padding-top: 68px;
   z-index: 2;
   width: 100%;
   max-width: 1200px;
-  padding: 0 20px;
+
 }
 
 
@@ -614,7 +732,7 @@ padding-top: 68px;
 
 
 .Main-review {
-  height: 60vh; 
+  height: 70vh; 
   width: 100%;
   background-color: #0a0a0a;
   color: whitesmoke;
@@ -655,7 +773,7 @@ padding-top: 68px;
 }
 
 .badge{
-   display: inline-flex;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
   background-color: #1a1a1a;
@@ -713,13 +831,14 @@ gap:1%;
 
 
 
-
 /* footer css */
 
 .Main{
-  height : 78vh;
+  height : 70vh;
   width:100%;
   background-color: #0a0a0a;
+  position: relative;
+  overflow: hidden;
 }
 
 .footer {
@@ -785,11 +904,16 @@ gap:1%;
   font-size:6rem;
     letter-spacing:-0.049em;
     padding-left: 180px;
+    position: absolute;
+    left: 0;
+     bottom: 5; 
+    overflow : hidden;
 }
 
 
 #digitalTag {
       overflow:hidden;
-      position:relative;
-      
+     margin-top: 1.3%;
+    
+     
 }

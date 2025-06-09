@@ -40,7 +40,7 @@ const Footer = () => {
       </div>
    
     </footer>
-         <div className="Tag">
+         <div  className="Tag">
         <h1 id="digitalTag">Digital Agency</h1>
       </div>
     </div>
