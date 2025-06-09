@@ -2,6 +2,8 @@ import React from 'react';
 
 const Footer = () => {
   return (
+
+    <div className='Main'>
     <footer className="footer">
       <div className="footer-main">
         <div className="footer-column">
@@ -36,7 +38,12 @@ const Footer = () => {
         <p>Powered by SocioLib</p>
         <p>Terms & Condition</p>
       </div>
+   
     </footer>
+         <div className="Tag">
+        <h1 id="digitalTag">Digital Agency</h1>
+      </div>
+    </div>
   );
 };
 
