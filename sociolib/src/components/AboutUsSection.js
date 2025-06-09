@@ -1,8 +1,11 @@
+import React from "react";
+import { FaRegDotCircle } from "react-icons/fa";
+
 function Aboutus(){
     return(
       <div  className="MainAboutUs">
           <div className="AboutText">
-            <h1> ⬤  ABOUT US</h1>
+            <h1>  <FaRegDotCircle /> ABOUT US</h1>
           </div>
           <div className="MainText">
             <p>We are a full cycle agency with designers,<br/>developers, and business strategists driven by<br/>passion and purpose </p>
@@ -10,7 +13,7 @@ function Aboutus(){
           <div className="JoinDiv">
              <div className="LeftDiv">
                 <iframe
-                 src=" https://www.youtube.com/watch?v=gpAJ6hJ3eFk&ab_channel=TechPhoenixMedia"
+                 src="https://www.youtube.com/watch?v=J11Qme3vAio"
                    allow="autoplay; encrypted-media"
                 ></iframe>
              </div>

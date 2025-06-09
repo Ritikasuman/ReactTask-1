@@ -333,8 +333,8 @@ li{
   width: 50%;
   border: none;
   object-fit: cover;
-  border-radius: 5%;
-  margin: 0 20px 0 10px;
+  border-radius: 20px;
+  margin: 0 20px 0 20px;
 } 
 
 
@@ -421,21 +421,25 @@ padding-top: 68px;
   background-color: #0a0a0a;
   color: white;
   padding: 60px 20px;
+  height: 83vh;
+  width: 100% ;
 }
 
 .value-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  height: 100%;
+  margin-left : 10%;
+  margin-right: 9%;
   display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
+  gap:100px;
   align-items: center;
-  justify-content: space-between;
+   position: relative; 
 }
 
-.value-content {
-  flex: 1 1 50%;
-  min-width: 300px;
+.value-content{
+  width:60%;
+  height:100%;
+  margin-top:10%;
+  z-index: 2;
 }
 
 .value-badge {
@@ -447,35 +451,35 @@ padding-top: 68px;
   border-radius: 20px;
   font-size: 14px;
   margin-bottom: 20px;
+  border: 1px solid #ffffff;
 }
 
-.value-dot {
-  width: 8px;
-  height: 8px;
-  background-color: orange;
-  border-radius: 50%;
-}
 
 .value-title {
-  font-size: 2rem;
-  margin-bottom: 16px;
+  font-size: 3.6rem;
+   letter-spacing:-0.03em;
+  margin-bottom: 20px;
+  font-family: sans-serif;
 }
 
 .value-description {
-  font-size: 1rem;
-  color: #cccccc;
-  margin-bottom: 24px;
+  font-size: 1.1rem;
+  color:#ABB0BE;
+  margin-bottom: 30px;
+   letter-spacing:-0.01em;
+  line-height: 30px;
 }
 
 .values-grid {
   display: flex;
-  gap: 30px;
+  gap: 10%;
+
 }
 
 .values-column {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 18px;
 }
 
 .value-item {
@@ -484,38 +488,36 @@ padding-top: 68px;
   gap: 10px;
 }
 
-.value-checkmark {
-  width: 20px;
-  height: 20px;
-  background-color: orange;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  font-size: 14px;
-}
-
 .value-text {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .value-image {
-  flex: 1 1 40%;
-  min-width: 280px;
-  text-align: center;
+  height: 87%;
+  width: 30%;
+   z-index: 0; 
 }
 
-.team-photo {
+.value-image img {
+  height: 100%;
   width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 10px;
+  border-radius: 20px; 
+   object-fit: cover;
+}
+
+.flytransparent{
+  background: transparent;
+  width:30%;
+
 }
 
 
-
-
+.flyimg img {
+  width: 100%;
+  position: relative; 
+  left: 60px; 
+  bottom: 30px;  
+}
 
 
 
