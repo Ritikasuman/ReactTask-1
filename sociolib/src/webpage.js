@@ -16,8 +16,9 @@ function  Webpage(){
             <SectionOne/>
             <Aboutus/>
             <ServicesSection/>
-            <MSSection/>
+          
             <ReviewSection/>
+              <MSSection/>
             <ValueSection/>
             <Contact/>
             <Footer/>

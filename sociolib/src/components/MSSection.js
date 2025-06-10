@@ -1,78 +1,97 @@
 import React from "react";
-import image1 from "../assets/OneMS.webp";
-import image2 from "../assets/TwoMS.webp";  // Replace with actual file name
-import image3 from "../assets/ThreeMS.webp"; // Replace with actual file name
-import image4 from "../assets/FourMS.webp"; 
-import { FaRegDotCircle } from "react-icons/fa";
 
-const MSSection = () => {
-  // Service card data
-  const services = [
-    {
-      id: 1,
-      image: image1,
-      title: "Design",
-      description: "Empowering brands with innovative designs and tailored strategies",
-    },
-    {
-      id: 2,
-      image: image2,
-      title: "Ideas",
-      description: "Empowering brands with innovative designs and tailored strategies",
-    },
-    {
-      id: 3,
-      image:image3,
-      title: "Marketing",
-      description: "Empowering brands with innovative designs and tailored strategies",
-    },
-    {
-      id: 4,
-      image:image4,
-      title: "Strategy",
-      description: "Empowering brands with innovative designs and tailored strategies",
-    },
-  ];
+import design from "../assets/OneMS.webp";
+import ideas from "../assets/TwoMS.webp";
+import marketing from "../assets/ThreeMS.webp";
+import strategy from "../assets/FourMS.webp";
 
+const services = [
+  {
+    id: 1,
+    image: design,
+    title: "Design",
+    description:(
+    <>
+      Empowering brands with <br />
+      innovative designs and<br />
+       tailored strategies
+    </>
+  ),
+  },
+  {
+    id: 2,
+    image: ideas,
+    title: "Ideas",
+     description:(
+    <>
+      Empowering brands with <br />
+      innovative designs and<br />
+       tailored strategies
+    </>
+  ),
+  },
+  {
+    id: 3,
+    image: marketing,
+    title: "Marketing",
+    description:(
+    <>
+      Empowering brands with <br />
+      innovative designs and<br />
+       tailored strategies
+    </>
+  ),
+  },
+  {
+    id: 4,
+    image: strategy,
+    title: "Strategy",
+    description:(
+    <>
+      Empowering brands with <br />
+      innovative designs and<br />
+       tailored strategies
+    </>
+  ),
+  },
+];
+
+function MSSection() {
   return (
-    <div className="MService">
-      <div className="badge">
-        <FaRegDotCircle/>SERVICES
+    <section className="ms-section">
+    <div className="subMs">
+      <div className="ms-header">
+         <div className="ms-tag">
+           <span className="badge">● SERVICES</span>
+         </div>
+
+        <div className="head">
+               <div className="ms-heading">
+                  <h2>We handle the digital, you <br />focus on business</h2>
+               </div>
+
+               <div className="ms-view">
+                 <a href="#" className="ms-view-all">View All →</a>
+               </div>
+        </div>
       </div>
-      
-      <div className="heading">
-          <h2>We handle the digital, you <br/> focus on business</h2>
-      </div>
-      
-      <div className="viewAll">
-        <a href="#">View All <span>→</span></a>
-      </div>
-      
-      <div className="Flags">
-        {services.map((service) => (
-          <div className="ImgFlag" key={service.id}>
-            <div className="image-container">
-              <img src={service.image || "/placeholder.svg"} alt={service.title} />
-            </div>
-            
-            <div className="Content">
-              <div className="subcontent">
-                <div className="topicname">
-                  <h3>{service.title}</h3>
-                </div>
-                <div className="context">
-                  <p>{service.description}</p>
-                </div>
-              </div>
-              <div className="Learnmore">
-                <a href="#">Learn More</a>
-              </div>
+
+
+      <div className="ms-cards">
+        {services.map(service => (
+          <div className="ms-card" key={service.id}>
+            <img src={service.image} alt={service.title} className="ms-icon" />
+            <div className="SecondContent">
+               <h3>{service.title}</h3>
+               <p>{service.description}</p>
+               <a href="#" className="ms-learn">Learn More</a>
             </div>
           </div>
         ))}
       </div>
     </div>
+    </section>
   );
-};
+}
 
 export default MSSection;
