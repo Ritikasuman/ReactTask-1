@@ -8,20 +8,25 @@ const ServicesSection = () => {
       </div>
 
         <div className="services-right">
-          <h2>Graphic Design<span>+</span></h2> 
+          <h3>Graphic Design
+            <span>+</span></h3> 
         <div/>
 
         <div className="service-item">
-          <h3>Interactive Design <span>+</span></h3>
+          <h3>Interactive Design 
+            <span>+</span></h3>
         </div>
         <div className="service-item">
-          <h3>Web Development <span>+</span></h3>
+          <h3>Web Development 
+            <span>+</span></h3>
         </div>
         <div className="service-item">
-          <h3>Social Media Marketing <span>+</span></h3>
+          <h3>Social Media Marketing 
+            <span>+</span></h3>
         </div>
         <div className="service-item">
-          <h3>Content Marketing <span>+</span></h3>
+          <h3>Content Marketing
+             <span>+</span></h3>
         </div>
       </div>
     </div>
