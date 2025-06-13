@@ -7,6 +7,7 @@ import ValueSection from './components/ValueSection';
 import Footer from './components/footer';
 import ReviewSection from './components/ReviewSection';
 import MSSection from './components/MSSection';
+import PortfolioSection from './components/PortfolioSection';
 
 function  Webpage(){
     return(
@@ -18,6 +19,7 @@ function  Webpage(){
             <ServicesSection/>
             <ReviewSection/>
               <MSSection/>
+              <PortfolioSection/>
             <ValueSection/>
             <Contact/>
             <Footer/>

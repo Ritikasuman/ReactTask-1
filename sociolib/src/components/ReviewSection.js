@@ -12,7 +12,7 @@ function ReviewSection(){
             </div>
             <div className="right-content">
                 <div className="badge">
-                <FaRegDotCircle/>REVIEWS
+                <FaRegDotCircle className="badgecolor"/>REVIEWS
                 </div>
                 <div className="heading">
                  <h1>

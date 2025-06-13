@@ -4,7 +4,7 @@ import design from "../assets/OneMS.webp";
 import ideas from "../assets/TwoMS.webp";
 import marketing from "../assets/ThreeMS.webp";
 import strategy from "../assets/FourMS.webp";
-
+import { FaRegDotCircle } from "react-icons/fa";
 const services = [
   {
     id: 1,
@@ -62,7 +62,7 @@ function MSSection() {
     <div className="subMs">
       <div className="ms-header">
          <div className="ms-tag">
-           <span className="badge">● SERVICES</span>
+           <span className="badge">  <FaRegDotCircle className="badgecolor"/> SERVICES</span>
          </div>
 
         <div className="head">

@@ -14,7 +14,7 @@ const ValueSection = () => {
       <div className="value-container">
         <div className="value-content">
           <div className="value-badge">
-          <FaRegDotCircle/>OUR VALUES
+          <FaRegDotCircle className="badgecolor"/>OUR VALUES
           </div>
           <h2 className="value-title">Principles that drive<br/>performance</h2>
           <p className="value-description">

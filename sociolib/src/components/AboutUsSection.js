@@ -5,7 +5,7 @@ function Aboutus(){
     return(
       <div  className="MainAboutUs">
           <div className="AboutText">
-            <h1>  <FaRegDotCircle /> ABOUT US</h1>
+            <h1>  <FaRegDotCircle className="badgecolor"/> ABOUT US</h1>
           </div>
           <div className="MainText">
             <p>We are a full cycle agency with designers,<br/>developers, and business strategists driven by<br/>passion and purpose </p>
