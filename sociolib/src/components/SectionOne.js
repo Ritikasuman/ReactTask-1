@@ -5,20 +5,16 @@ import ultrap from '../assets/ultraPSponsorLogo.webp';
 import ultra from '../assets/ultraSponsorLogo.webp';
 import power from '../assets/powerSponsorLogo.webp';
 import hyper from '../assets/HyperSponsorLogo.webp';
-
+import vedio from '../assets/vedio.gif'
 function SectionOne() {
   return (
     <div className='Main'>
      <div className="home-section">
       {/* Background video */}
       <div className="video-section">
-        <iframe
-          src="https://www.youtube.com/embed/RBnObvMCpOU?autoplay=1&mute=1&loop=1&playlist=RBnObvMCpOU"
-          title="Background Video"
-          allow="autoplay; encrypted-media"
-          allowFullScreen
-        ></iframe>
-      </div>
+  <img src={vedio} alt="Background Animation" className="video-bg" />
+</div>
+
 
       {/* Content*/}
       <span className="content-container">
@@ -36,19 +32,19 @@ function SectionOne() {
           </div>
         </div>
 
-        <div className="right-section">
+        <div className="right-section  scale-up-img ">
           <img src={logo} alt="hero" className="hero-img" />
         </div>
 
       </span> 
       <div className='SponsorMain'>
                <div className='SponsorSub'>
-                  <img src={mega} alt="logo" className="Slogo" />
-                  <img src={power} alt="logo" className="Slogo" />
-                  <img src={hyper} alt="logo" className="Slogo" />
-                  <img src={ultra} alt="logo" className="Slogo" />
-                  <img src={ultrap} alt="logo" className="Slogo" />
-                  <img src={mega} alt="logo" className="Slogo" />
+                  <img src={mega} alt="logo" className="Slogo scale-up-img" />
+                  <img src={power} alt="logo" className="Slogo scale-up-img" />
+                  <img src={hyper} alt="logo" className="Slogo scale-up-img" />
+                  <img src={ultra} alt="logo" className="Slogo scale-up-img" />
+                  <img src={ultrap} alt="logo" className="Slogo scale-up-img" />
+                  <img src={mega} alt="logo" className="Slogo scale-up-img" />
                      </div>
       </div> 
       

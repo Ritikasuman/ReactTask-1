@@ -1,9 +1,11 @@
 import { useState } from "react";
 import logo from '../assets/ServiceImg.webp';
 import { FaRegDotCircle } from "react-icons/fa";
+import useInView from "./useInView"; // Adjust path as needed
 
 const ServicesSection = () => {
   const [openIndex, setOpenIndex] = useState(null);
+  const [rightRef, inViewRight] = useInView();
 
   const handleToggle = (index) => {
     setOpenIndex(prev => (prev === index ? null : index));
@@ -34,14 +36,17 @@ const ServicesSection = () => {
 
   return (
     <div className="services-container">
-      <div className="services-left">
-        <img src={logo} alt="Rocket Fun" className="services-img" />
+      <div className="services-left scale-up-img">
+        <img src={logo} alt="Rocket Fun" className="services-img scale-up-img" />
       </div>
-     
-      <div className="services-right">
-         <div className="value-badge">
-          <FaRegDotCircle className="badgecolor"/>WHAT WE DO 
-          </div>
+
+      <div
+        className={`services-right ${inViewRight ? "slide-up" : ""}`}
+        ref={rightRef}
+      >
+        <div className="value-badge">
+          <FaRegDotCircle className="badgecolor" /> WHAT WE DO
+        </div>
         {services.map((service, index) => (
           <div key={index}>
             <div className="service-item" onClick={() => handleToggle(index)}>

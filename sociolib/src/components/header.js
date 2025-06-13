@@ -4,7 +4,7 @@ import logo from '../assets/digibiz.webp';
 function Header() {
   return (
     <nav className="navbar">
-      <img src={logo} alt="DigiBiz Logo" className="logo" />
+      <img src={logo} alt="DigiBiz Logo" className="logo scale-up-img"  />
       <ul className="nav-links">
         
         <li className="dropdown">
